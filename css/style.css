@@ -1,0 +1,1801 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Noto Serif JP", serif;
+    font-size: 2rem;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.sans {
+    font-family: "Noto Sans JP", serif;
+    font-size: 1.6rem;
+    color: #333333;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pc-none,
+.pc-ip-none,
+#sp-to_reservation a,
+#sp-to_top a,
+.sp-vertical-br {
+    display: none;
+}
+
+/* ヘッダーここから */
+header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.top {
+    flex-basis: 32%;
+    align-self: center;
+    padding-left: 24px;
+}
+
+.hLogo {
+    width: 240px;
+    height: auto;
+}
+
+.sp-navigation {
+    display: none;
+}
+
+.navigation {
+    flex-basis: 65%;
+    padding-right: 146px;
+}
+
+.navUl {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.navLi {
+    align-self: center;
+    padding-right: 24px;
+}
+
+.navLi a {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.navLi a:hover {
+    color: #828282;
+    border-bottom: 1px solid #828282;
+}
+
+.reservationNav {
+    width: 140px;
+    max-width: 100%;
+    height: 140px;
+    background-color: #E67A3C;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservationNav:hover {
+    filter: brightness(125%);
+    transform: scale(1.1);
+    transition: all 200ms linear 0ms;
+}
+
+.hLogo:hover {
+    transform: scale(1.05);
+}
+
+.reservationNavP {
+    text-align: center;
+}
+
+.reservationNavP a {
+    display: block;
+    padding: 22px 10px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #333333;
+}
+
+/* heroここから */
+.hero {
+    width: 100%;
+    height: auto;
+    transform: translateY(100px);
+}
+
+.wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.swiper {
+    --swiper-navigation-sides-offset: -40px;
+    --swiper-pagination-bottom: -20px;
+}
+
+/* 「星ヶ浜キャンプ場について」ここから */
+main {
+    margin: 0 auto;
+}
+
+.aboutHosigahamaId {
+    position: relative;
+}
+
+#aboutHosigahama {
+    position: absolute;
+    top: -100px;
+}
+
+section.aboutHosigahama {
+    background-color: #39B9DF;
+    text-align: center;
+    padding: 72px 0 56px;
+}
+
+.aboutH2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 48px;
+}
+
+.aboutP {
+    line-height: 2.7;
+    font-weight: 400;
+}
+
+/* 「お知らせ」ここから */
+section.news {
+    background-color: #15879F;
+    padding: 40px 0 56px;
+    position: relative;
+}
+
+#news {
+    position: absolute;
+    top: -100px;
+}
+
+.newsH2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 48px;
+    font-weight: 600;
+}
+
+.newsUl_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 1320px;
+    max-width: 100%;
+    margin: 0 auto 40px;
+}
+
+.newsLi_item {
+    width: 340px;
+    max-width: 100%;
+    height: 510px;
+    max-height: 100%;
+    margin: 0 50px;
+    background-color: #FBF0C8;
+    border-radius: 30px;
+    position: relative;
+}
+
+.newsLi_item img {
+    display: block;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-bottom: 24px;
+}
+
+.newsTime {
+    font-size: 1.6rem;
+    color: #333333;
+    margin-bottom: 8px;
+    padding-left: 24px;
+}
+
+.newsH3 {
+    font-size: 2rem;
+    color: #333333;
+    font-weight: 600;
+    padding-left: 24px;
+    margin-bottom: 32px;
+}
+
+.newsP {
+    font-size: 1.6rem;
+    color: #333333;
+    padding: 0 24px;
+    line-height: 1.2;
+}
+
+.detail {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+}
+
+.detail a {
+    color: #333333;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #333333;
+}
+
+.detail a:hover {
+    opacity: 70%;
+}
+
+.newsButton {
+    width: 220px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #F4CB34;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsButton a {
+    display: block;
+    padding: 20px 40px;
+}
+
+.moveButton {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.allNewsP {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.rightArrow {
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.newsButton:hover {
+    filter: brightness(115%);
+    transform: scale(1.05);
+
+    .rightArrow {
+        transform: translateX(12px);
+    }
+}
+
+/* 「体験できること」ここから */
+section.experience {
+    background: linear-gradient(to bottom, #39B9DF 25%, #000000 80%);
+    padding: 40px 0 120px;
+    position: relative;
+}
+
+#experience {
+    position: absolute;
+    top: -100px;
+}
+
+.experienceH2 {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.eat_box {
+    width: 1120px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 160px;
+}
+
+.eatSentence_item {
+    transform: translateX(56px);
+    width: 386px;
+    max-width: 100%;
+    padding-top: 120px;
+}
+
+.eatSentenceH3 {
+    letter-spacing: 1rem;
+    text-align: right;
+    padding-right: 16px;
+    font-size: 6.4rem;
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+
+.eatSentenceP {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.eatPicture_item {
+    width: 780px;
+    max-width: 100%;
+    height: auto;
+}
+
+.eatPicture_item img {
+    display: block;
+    border-radius: 40px;
+}
+
+.stay_box {
+    width: 1120px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 160px;
+}
+
+.stayPicture_item {
+    width: 780px;
+    max-width: 100%;
+    height: auto;
+}
+
+.stayPicture_item img {
+    display: block;
+    border-radius: 40px;
+}
+
+.staySentence_item {
+    transform: translateX(-56px);
+    width: 386px;
+    max-width: 100%;
+    padding-top: 120px;
+}
+
+.staySentenceH3 {
+    letter-spacing: 1rem;
+    padding-left: 16px;
+    font-size: 6.4rem;
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+
+.staySentenceP {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.view_box {
+    width: 1120px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.viewSentence_item {
+    transform: translateX(56px);
+    width: 386px;
+    max-width: 100%;
+    padding-top: 120px;
+}
+
+.viewSentenceH3 {
+    letter-spacing: 1rem;
+    text-align: right;
+    padding-right: 16px;
+    font-size: 6.4rem;
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+
+.viewSentenceP {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2;
+}
+
+.viewPicture_item {
+    width: 780px;
+    max-width: 100%;
+    height: auto;
+}
+
+.viewPicture_item img {
+    display: block;
+    border-radius: 40px;
+}
+
+/* 「料金表」ここから */
+section.fee {
+    background-color: #FBF0C8;
+    padding: 40px 0 32px;
+    position: relative;
+}
+
+#fee {
+    position: absolute;
+    top: -100px;
+}
+
+.feeH2 {
+    text-align: center;
+    color: #333333;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* 料金表の表　ここから */
+.priceTbl_box {
+    width: 75%;
+    margin: 20px auto 40px;
+    text-align: right;
+}
+
+.priceTbl_a {
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.priceTbl_b {
+    width: 100%;
+}
+
+.add {
+    font-size: 1.4rem;
+    display: block;
+    padding: 5px;
+    color: #333333;
+}
+
+th {
+    background: #184261;
+    border: solid 1px #828282;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+}
+
+td {
+    border: solid 1px #828282;
+    padding: 10px;
+    text-align: center;
+
+}
+
+td:first-child {
+    background: #184261;
+    color: #fff;
+}
+
+.priceTbl td:first-child {
+    background: #FBF0C8;
+}
+
+.tableValue td:nth-child(even) {
+    color: #333333;
+    font-weight: 400;
+}
+
+.tableValue td:nth-child(3) {
+    color: #333333;
+    font-weight: 400;
+}
+
+/* 料金表の表　ここまで */
+
+.feeP {
+    text-align: center;
+    color: #333333;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.feeP a {
+    border-bottom: 1px solid #333333;
+}
+
+.feeP a:hover {
+    opacity: 70%;
+}
+
+/* 「キャンプマップ」ここから */
+section.campMap {
+    background-color: #FAE7A3;
+    padding: 40px 0 80px;
+    text-align: center;
+    position: relative;
+}
+
+#campMap {
+    position: absolute;
+    top: -100px;
+}
+
+.campMapH2 {
+    color: #333333;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 56px;
+}
+
+.campMapPicture {
+    margin-bottom: 80px;
+}
+
+.campMapSentenceBox {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.campMapP {
+    color: #333333;
+    font-size: 1.8rem;
+    line-height: 2;
+}
+
+/* 「ご予約」ここから */
+section.reservation {
+    background-color: #1E557E;
+    padding: 64px 0 72px;
+    position: relative;
+}
+
+#reservation {
+    position: absolute;
+    top: -100px;
+}
+
+.reservationH2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+form {
+    width: 970px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.form_bigBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 24px;
+}
+
+/* 予約フォーム：左側　ここから */
+.leftForm_bigItem {
+    flex-basis: 420px;
+}
+
+.leftFormLi {
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 40px;
+}
+
+.leftFormLi_smallBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 16px 8px 0;
+}
+
+.leftFormLi_smallItem_left {
+    flex-basis: 24%;
+}
+
+.leftFormLiSentenceP {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-left: 2px;
+}
+
+.leftFormLi_smallItem_right {
+    flex-basis: 74%;
+}
+
+select.accommodationPeriod {
+    background-color: #FBF0C8;
+    width: 60px;
+    height: 30px;
+    text-align-last: center;
+    color: #333333;
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+select.adult {
+    background-color: #FBF0C8;
+    width: 60px;
+    height: 30px;
+    text-align-last: center;
+    color: #333333;
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+select.child {
+    background-color: #FBF0C8;
+    width: 60px;
+    height: 30px;
+    text-align-last: center;
+    color: #333333;
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+/* 予約フォーム：右側　ここから */
+.rightForm_bigItem {
+    flex-basis: 420px;
+}
+
+.rightFormLi {
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 40px;
+}
+
+.rightFormLi_smallBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 0 16px 8px 0;
+}
+
+.rightFormLi_smallItem_left {
+    flex-basis: 24%;
+}
+
+.rightFormLiSentenceP {
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-left: 2px;
+}
+
+.rightFormLi_smallItem_right {
+    flex-basis: 74%;
+}
+
+select.useSite {
+    background-color: #FBF0C8;
+    width: 150px;
+    height: 30px;
+    text-align-last: center;
+    color: #333333;
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+select.useDay {
+    background-color: #FBF0C8;
+    width: 120px;
+    height: 30px;
+    text-align-last: center;
+    color: #333333;
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+select.useSiteNumber {
+    background-color: #FBF0C8;
+    width: 80px;
+    height: 30px;
+    text-align-last: center;
+    color: #333333;
+    font-size: 1.8rem;
+    border-radius: 4px;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+.reservationP {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.reservationSentenseBox {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.reservationSentense {
+    line-height: 2;
+    font-size: 1.8rem;
+}
+
+/* 「アクセス」ここから */
+section.access {
+    background-color: #184261;
+    padding: 40px 0 72px;
+    position: relative;
+}
+
+#access {
+    position: absolute;
+    top: -100px;
+}
+
+.accessH2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+.accessContent_box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 856px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.accessSentence_item {
+    width: 280px;
+    margin-top: 96px;
+}
+
+.accessSentenceP {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.accessSentencePicture_item {
+    width: 560px;
+    max-width: 100%;
+    height: auto;
+}
+
+.accessSentencePicture_item img {
+    display: block;
+    border-radius: 40px;
+}
+
+/* フッターここから */
+footer {
+    background-color: #FBF0C8;
+    padding: 72px 0 40px;
+    text-align: center;
+    color: #333333;
+    position: relative;
+}
+
+#inquiry {
+    position: absolute;
+    top: -100px;
+}
+
+.fLogo {
+    margin: 0 auto;
+    width: 240px;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+.footerAddress {
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 56px;
+}
+
+nav.footerNav {
+    width: 1120px;
+    max-width: 100%;
+    margin: 0 auto 80px;
+}
+
+.footerNavUl_box {
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+    display: flex;
+    justify-content: center;
+    padding: 24px 0 24px;
+}
+
+.footerNavLi_item {
+    padding: 0 12px;
+}
+
+.footerNavLi_item a {
+    font-size: 1.6rem;
+}
+
+.footerNavLi_item a:hover {
+    color: #828282;
+    border-bottom: 1px solid #828282;
+}
+
+.footerSentence {
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.copylight {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.copylightP {
+    font-size: 1.6rem;
+}
+
+/* 予約ボタン　ここから */
+#to_reservation {
+    position: fixed;
+    bottom: 132px;
+    right: 20px;
+    z-index: 200;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+#to_reservation a:hover {
+    filter: brightness(120%);
+}
+
+#to_reservation a img:hover {
+    transform: scale(1.1);
+}
+
+/* 予約ボタン　ここまで */
+
+/* TOPへ戻るボタン　ここから */
+#to_top {
+    position: fixed;
+    bottom: 16px;
+    right: 20px;
+    z-index: 200;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+
+#to_top a:hover {
+    filter: brightness(120%);
+}
+
+#to_top a img:hover {
+    transform: scale(1.1);
+}
+
+/* TOPへ戻るボタン　ここまで */
+
+/* フェードイン　ここから */
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fade_in 800ms;
+    animation-fill-mode: both;
+}
+
+/* フェードイン　ここまで */
+
+/* ローディング画面　ここから */
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #39B9DF;
+    transition: all 4s;
+    position: fixed;
+    top: 0;
+    z-index: 5000;
+}
+
+/* ヨットの動き　ここから */
+.spinner_box {
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    max-height: 100%;
+    margin: 0 auto;
+    transform: translateY(200px);
+    position: relative;
+}
+
+.spinner_yotto {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    animation: yotto_rotate 2s infinite linear;
+    z-index: 6000;
+}
+
+@keyframes yotto_rotate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-16px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ヨットの動き　ここまで */
+
+/* 波　ここから */
+.spinner_wave {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    z-index: 6100;
+}
+
+/* 波　ここまで */
+
+.loadingP {
+    font-size: 3.2rem;
+    text-align: center;
+    transform: translateY(200px);
+    font-weight: 400;
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+ */
+/* ローディング画面　ここまで
+
+/*===========
+fadeIn_up
+===========*/
+.fadeIn_up {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.fadeIn_up.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+
+/* iPad用レスポンシブ(980px)　ここから */
+@media screen and (max-width:980px) {
+
+    /* レスポンシブ　全体設定 */
+    .ip-none,
+    .pc-ip-none {
+        display: none;
+    }
+
+    .pc-none {
+        display: block;
+    }
+
+    .slide-up {
+        transform: translateY(20px);
+    }
+
+    .allSectionH2 {
+        font-size: 3.2rem;
+    }
+
+    .sameLargeP {
+        font-size: 1.8rem;
+    }
+
+    /* ヘッダー　レスポンシブ */
+    header {
+        height: 80px;
+    }
+
+    .hLogo {
+        width: 215px;
+        min-width: 180px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+
+    .reservationNav {
+        display: none;
+    }
+
+    /* メインビジュアル　レスポンシブ */
+    .hero {
+        transform: translateY(80px);
+    }
+
+    /* ハンバーガーメニュー　ここから */
+    .hamburger {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+        width: 45px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hamburger>span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: #333333;
+        border-radius: 2px;
+        transition: all 0.3s;
+    }
+
+    .hamburger>span:nth-last-of-type(1) {
+        position: absolute;
+    }
+
+    .hamburger>span:nth-last-of-type(2) {
+        transform: translateY(-15px);
+    }
+
+    .hamburger>span:nth-last-of-type(3) {
+        transform: translateY(15px);
+    }
+
+    .hamburger.open>span:nth-last-of-type(1) {
+        background-color: transparent;
+    }
+
+    .hamburger.open>span:nth-last-of-type(2) {
+        transform: rotate(45deg);
+    }
+
+    .hamburger.open>span:nth-last-of-type(3) {
+        transform: rotate(-45deg);
+    }
+
+    nav.navigation {
+        position: fixed;
+        top: 80px;
+        right: 0;
+        width: 40%;
+        height: 100vh;
+        background-color: rgba(52, 122, 156, 0.95);
+        display: none;
+        z-index: 10000;
+        padding-top: 10px;
+        padding-right: 0;
+    }
+
+    nav.navigation ul {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav.navigation ul li {
+        width: 100%;
+        padding: 20px 0;
+        border-bottom: 1px solid #ffffff;
+        text-align: center;
+    }
+
+    nav.navigation ul li a {
+        color: #ffffff;
+        font-size: 1.4rem;
+    }
+
+    nav.navigation ul li a:hover {
+        opacity: 0.7;
+    }
+
+    nav.navigation.open {
+        display: block;
+        animation: 0.5s fadeIn forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    /* ハンバーガーメニュー　ここまで */
+
+    /* 「お知らせ」レスポンシブ */
+    .newsUl_box {
+        width: 580px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .newsLi_item {
+        width: 240px;
+        height: 260px;
+        margin: 0 25px 48px;
+    }
+
+    /* 「体験できること」レスポンシブ */
+    .eat_box {
+        flex-direction: column-reverse;
+        margin-bottom: 80px;
+    }
+
+    .eatSentence_item {
+        transform: translateX(0);
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .eatSentenceH3 {
+        padding-right: 0;
+        text-align: center;
+        font-size: 4.8rem;
+        margin-bottom: 40px;
+    }
+
+    .eatSentenceP {
+        text-align: center;
+    }
+
+    .eatPicture_item {
+        width: 580px;
+        margin: 0 auto;
+    }
+
+    .stay_box {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
+    .stayPicture_item {
+        width: 580px;
+        margin: 0 auto;
+    }
+
+    .staySentence_item {
+        transform: translateX(0);
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+
+    .staySentenceH3 {
+        padding-left: 0;
+        text-align: center;
+        font-size: 4.8rem;
+        margin-bottom: 40px;
+    }
+
+    .staySentenceP {
+        text-align: center;
+    }
+
+    .view_box {
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+
+    .viewSentence_item {
+        transform: translateX(0);
+        padding-top: 40px;
+        margin: 0 auto;
+    }
+
+    .viewSentenceH3 {
+        text-align: center;
+        padding-right: 0;
+        font-size: 4.8rem;
+        margin-bottom: 40px;
+    }
+
+    .viewSentenceP {
+        text-align: center;
+    }
+
+    .viewPicture_item {
+        width: 580px;
+        margin: 0 auto;
+    }
+
+    /* 「キャンプマップ」レスポンシブ */
+    .campMapPicture {
+        max-width: 60%;
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+
+    .campMapSentenceBox {
+        width: 70%;
+    }
+
+    .campMapP {
+        font-size: 1.6rem;
+    }
+
+    /* 「ご予約」レスポンシブ */
+    .form_bigBox {
+        display: block;
+        width: 580px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .leftFormLiSentenceP {
+        padding-left: 80px;
+    }
+
+    .rightFormLiSentenceP {
+        padding-left: 80px;
+    }
+
+    select {
+        margin-right: 80px;
+        text-align: center;
+    }
+
+    .reservationP {
+        font-size: 1.8rem;
+    }
+
+    .reservationSentenseBox {
+        width: 70%;
+    }
+
+    .reservationSentense {
+        font-size: 1.6rem;
+    }
+
+    /* 「アクセス」ここから */
+    span.accessSpan {
+        display: none;
+    }
+
+    .accessH2 {
+        margin-bottom: 56px;
+    }
+
+    .accessContent_box {
+        flex-direction: column-reverse;
+    }
+
+    .accessSentence_item {
+        margin: 0 auto;
+    }
+
+    .accessSentenceP {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .accessSentencePicture_item {
+        width: 400px;
+        margin: 0 auto 40px;
+    }
+
+    /* 「お問い合わせ」レスポンシブ */
+    .fLogo {
+        width: 215px;
+    }
+
+    /* 予約ボタン　レスポンシブ */
+    #to_reservation {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* TOPへ戻るボタン　レスポンシブ */
+    #to_top {
+        width: 90px;
+        height: 90px;
+    }
+
+    /*===============
+      写真用fadeIn_up
+    ================*/
+    .ip-sp-fadeIn_up {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(50px);
+        transition: opacity 1s, visibility 1s, transform 1s;
+    }
+
+    .ip-sp-fadeIn_up.is-show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0px);
+    }
+
+}
+
+/* スマホ（横持ち）用のレスポンシブ　ここから */
+@media screen and (max-width: 768px) {
+
+    .pc-ip-none {
+        display: block;
+    }
+
+    span.checkIn {
+        display: none;
+    }
+
+    /* ヘッダー　レスポンシブ */
+    header {
+        height: 60px;
+    }
+
+    .slide-up {
+        transform: translateY(40px);
+    }
+
+    .hLogo {
+        top: 12px;
+        width: 150px;
+        min-width: 120px;
+    }
+
+    /* ハンバーガーメニュー　レスポンシブ */
+    .hamburger {
+        top: 8px;
+        width: 40px;
+        height: 45px;
+    }
+
+    nav.navigation {
+        top: 60px;
+        width: 50%;
+    }
+
+    nav.navigation ul li {
+        padding: 10px 0;
+    }
+
+    nav.navigation ul li a {
+        font-size: 1.4rem;
+    }
+
+    /* 料金表のレスポンシブ */
+    .priceTbl {
+        width: 80%;
+    }
+
+    .thead {
+        display: none;
+    }
+
+    tr {
+        width: 100%;
+    }
+
+    td {
+        display: block;
+        text-align: right;
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    td:first-child {
+        background: #184261;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    /* キャンプサイト　レスポンシブ */
+    .campMapSentenceBox {
+        width: 80%;
+    }
+
+    /* 「ご予約」　レスポンシブ */
+    .reservationSentenseBox {
+        width: 80%;
+    }
+
+    /* フッター　レスポンシブ */
+    footer {
+        padding-top: 56px;
+    }
+
+    .fLogo {
+        width: 180px;
+        margin-bottom: 56px;
+    }
+
+    /* 予約ボタン&TOPへ戻るボタン　場所変更 */
+    #to_reservation a,
+    #to_top a {
+        display: none;
+    }
+
+    #sp-to_reservation a,
+    #sp-to_top a {
+        display: block;
+    }
+
+    #sp-to_reservation {
+        position: fixed;
+        top: 5px;
+        right: 80px;
+        z-index: 210;
+        width: 50px;
+        height: 50px;
+    }
+
+    #sp-to_top {
+        position: fixed;
+        top: 5px;
+        right: 140px;
+        z-index: 220;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* ローディング画面　レスポンシブ */
+    .spinner_box {
+        transform: translateY(60px);
+    }
+
+    .loadingP {
+        transform: translateY(60px);
+    }
+}
+
+/* スマホ用（縦持ち）のレスポンシブ　ここから */
+@media screen and (max-width:520px) {
+
+    /* 全体設定 */
+    .container {
+        padding: 0 40px;
+    }
+
+    .pc-ip-spBeside-br {
+        display: none;
+    }
+
+    .allSectionH2 {
+        font-size: 2.4rem;
+    }
+
+    .sameLargeP {
+        font-size: 1.4rem;
+    }
+
+    .sp-vertical-br {
+        display: block;
+    }
+
+    /* ハンバーガーメニュー　レスポンシブ */
+    nav.navigation {
+        width: 60%;
+    }
+
+    /* 「星ヶ浜について」レスポンシブ */
+    section.aboutHosigahama {
+        padding: 40px 0 40px;
+    }
+
+    .aboutP {
+        text-align: left;
+    }
+
+    /* 「お知らせ」レスポンシブ */
+    .newsUl_box {
+        display: block;
+        width: 480px;
+    }
+
+    .newsLi_item {
+        margin: 0 auto 56px;
+        width: 340px;
+        max-width: 100%;
+        height: 310px;
+        max-height: 100%;
+        text-align: center;
+    }
+
+    .newsH3 {
+        padding: 0;
+    }
+
+    .newsTime {
+        font-size: 1.4rem;
+        padding: 0;
+    }
+
+    .newsButton {
+        width: 180px;
+    }
+
+    /* 「体験できること」レスポンシブ */
+    section.experience {
+        padding-bottom: 80px;
+    }
+
+    .experienceH2 {
+        margin-bottom: 40px;
+    }
+
+    .eat_box {
+        width: 480px;
+        margin-bottom: 64px;
+    }
+
+    .eatPicture_item {
+        width: 400px;
+    }
+
+    .eatSentence_item {
+        padding-top: 24px;
+    }
+
+    .eatSentenceH3 {
+        font-size: 3.2rem;
+        letter-spacing: 0.6rem;
+        margin-bottom: 24px;
+    }
+
+    .stay_box {
+        width: 480px;
+        margin-bottom: 64px;
+    }
+
+    .stayPicture_item {
+        width: 400px;
+    }
+
+    .staySentence_item {
+        padding-top: 24px;
+    }
+
+    .staySentenceH3 {
+        font-size: 3.2rem;
+        letter-spacing: 0.6rem;
+        margin-bottom: 24px;
+    }
+
+    .view_box {
+        width: 480px;
+        margin-bottom: 24px;
+    }
+
+    .viewPicture_item {
+        width: 400px;
+    }
+
+    .viewSentence_item {
+        padding-top: 24px;
+    }
+
+    .viewSentenceH3 {
+        font-size: 3.2rem;
+        letter-spacing: 0.6rem;
+        margin-bottom: 24px;
+    }
+
+    /* 料金表　レスポンシブ */
+    .feeH2 {
+        margin-bottom: 32px;
+    }
+
+    .priceTbl_box {
+        margin-bottom: 32px;
+    }
+
+    td {
+        font-size: 1.6rem;
+    }
+
+    /* キャンプマップ　ここから */
+    .campMapH2 {
+        margin-bottom: 40px;
+    }
+
+    .campMapP {
+        font-size: 1.4rem;
+    }
+
+    /* 「ご予約」　レスポンシブ */
+    .leftFormLiSentenceP {
+        transform: translateY(6px);
+        padding-left: 40px;
+    }
+
+    .rightFormLiSentenceP {
+        transform: translateY(6px);
+        padding-left: 40px;
+    }
+
+    select {
+        margin-right: 40px;
+    }
+
+    select.accommodationPeriod {
+        font-size: 1.4rem;
+        width: 50px;
+        height: 25px;
+    }
+
+    select.adult {
+        font-size: 1.4rem;
+        width: 50px;
+        height: 25px;
+    }
+
+    select.child {
+        font-size: 1.4rem;
+        width: 50px;
+        height: 25px;
+    }
+
+    select.useSite {
+        font-size: 1.4rem;
+        width: 120px;
+        height: 25px;
+    }
+
+    select.useDay {
+        font-size: 1.4rem;
+        width: 100px;
+        height: 25px;
+    }
+
+    select.useSiteNumber {
+        font-size: 1.4rem;
+        width: 70px;
+        height: 25px;
+    }
+
+    .reservationP {
+        font-size: 1.6rem;
+    }
+
+    .reservationSentense {
+        font-size: 1.4rem;
+    }
+
+    .feeP {
+        line-height: 1.5;
+    }
+
+    /* キャンプサイト　レスポンシブ */
+    section.campMap {
+        padding-bottom: 40px;
+    }
+
+    .campMapSentenceBox {
+        width: 90%;
+    }
+
+    /* 「ご予約」　レスポンシブ */
+    section.reservation {
+        padding: 40px 0 64px;
+    }
+
+    .reservationH2 {
+        margin-bottom: 40px;
+    }
+
+    .reservationSentenseBox {
+        width: 90%;
+    }
+
+    /* アクセス　レスポンシブ */
+    .accessH2 {
+        margin-bottom: 40px;
+    }
+
+    .accessSentenceP {
+        font-size: 1.6rem;
+    }
+
+    /* フッター　レスポンシブ */
+    footer {
+        padding-top: 40px;
+    }
+
+    .fLogo {
+        width: 180px;
+        margin-bottom: 40px;
+    }
+
+    .footerSentence {
+        margin-bottom: 16px;
+    }
+
+    .copylightP {
+        font-size: 1.4rem;
+    }
+
+    /* ローディング画面　レスポンシブ */
+    .spinner_box {
+        transform: translateY(200px);
+    }
+
+    .loadingP {
+        transform: translateY(200px);
+    }
+}
