@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* ==========================
+    全体設定
+========================== */
+
+body {
+  font-family: "Noto Sans JP", "Helvetica Neue", Arial,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #1c1c1c;
+  background-color: #f8f8f8;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  padding-top: 50px;
+  width: 100%;
+}
+
+/* ==========================
+    ヘッダー
+========================== */
+header {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  margin: 0 auto 16px;
+}
+
+.description {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
+
+/* ==========================
+    hero
+========================== */
+section.mv {
+  width: 100%;
+  margin-bottom: 72px;
+}
+
+.mvHero {
+  height: 580px;
+  background: url(../images/mv.png) no-repeat center center/cover;
+}
+
+/* ==========================
+    メインキャッチ
+========================== */
+main {
+  max-width: 1040px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section.mainCatch {
+  width: 100%;
+}
+
+.mainCatch_box {
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.mainCatch_h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.mainCatch_p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
+
+/* ==========================
+    メインキャッチ画像
+========================== */
+section.mainImg {
+  width: 100%;
+  padding-bottom: 72px;
+}
+
+.mainImg_box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.mainImg_item {
+  flex-basis: 32%;
+  text-align: center;
+}
+
+.mainImg_h2 {
+  padding: 8px;
+  color: black;
+}
+
+/* ==========================
+    リードキャッチ
+========================== */
+section.readCatch {
+  width: 100%;
+}
+
+.readCatch_box {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.readCatch_h2 {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.readCatch_p {
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+}
